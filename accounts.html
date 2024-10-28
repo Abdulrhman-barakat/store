@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/regular.min.css" integrity="sha512-j+P0XpTXw+hDTK64xqC/cjv62cf629/IR4/0bokmich7J8XdVlWT40+1M/Z58rCQ4F+3QoJIfzh6Ui6TTIP6WQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/master.css" >
+        <title>Accounts</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-top">
+                <div class="container header-container">
+                    <div class="header-contact">
+                        <span class="num-phone">(+01)-2947-4278</span>
+                        <a href="">Our location</a>
+                    </div>
+                    <p>
+                        Super Value Deals - Save more with coupons
+                    </p>
+                    <a href="login.html" class="log-in">Log In/Sign Up</a>
+                </div>
+            </div>
+            <nav class="header-bottom">
+                <div class="container header-container">
+                    <div class="nav-menu">
+                        <a href="index.html" class="logo"><img src="img/logo.svg" alt="logo store"></a>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a class="active" href="accounts.html">My Account</a></li>
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <div class="input-search">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                            <input type="text" placeholder="search for items..">
+                        </div>
+                        <div class="wishlist">
+                            <a href="wishlist.index"><i class="fa-regular fa-heart"></i></a>
+                            <span class="count-wishlist">4</span>
+                        </div>
+                        <div class="shopping-cart">
+                            <a href="shopping-cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                            <span class="count-cart-shoppng">2</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="breadcrumb">
+                <ul class="breadcrumb-list container">
+                    <li><a href="index.html" class="breadcrumb-link">Home</a></li>
+                    <li><span class="breadcrumb-link">></span></li>
+                    <li class="breadcrumb-link">Account</li>
+
+                </ul>
+            </section>
+
+            <section class="accounts section-lg">
+                <div class="accounts-container container grid">
+                    <div class="accounts-link">
+                        <ul>
+                            <li>
+                                <button class="active" data-target="dashboard">
+                                    <i class="fa-solid fa-sliders"></i> Dashboard 
+                                </button>
+                            </li>
+                            <li>
+                                <button data-target="my-order">
+                                    <i class="fa-solid fa-bag-shopping"></i> Order 
+                                </button>
+                            </li>
+                            <li>
+                                <button data-target="update-profile">
+                                    <i class="fa-solid fa-user"></i> Update Profile
+                                </button>
+                            </li>
+                            <li>
+                                <button data-target="address">
+                                    <i class="fa-solid fa-location-dot"></i> My Address 
+                                </button>
+                            </li>
+                            <li>
+                                <button data-target="change-password">
+                                    <i class="fa-solid fa-user"></i> Change Password
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <i class="fa-solid fa-right-from-bracket"></i> Logout
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="display-links">
+                        <div class="display-links-content d-none my-order">
+                            <h3>Your Orders</h3>
+
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Order</td>
+                                        <td>Date</td>
+                                        <td>Status</td>
+                                        <td>Total</td>
+                                        <td>Actions</td>
+                                    </tr>
+                                </thead>
+                                
+                                <tbody>
+                                    <tr>
+                                        <td>#1357</td>
+                                        <td>March 45, 2020</td>
+                                        <td>Processing</td>
+                                        <td>$125.00</td>
+                                        <td class="link-action">View</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#2757</td>
+                                        <td>June 29, 2020</td>
+                                        <td>Completed</td>
+                                        <td>$364.00</td>
+                                        <td class="link-action">View</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#4342</td>
+                                        <td>August 02, 2020</td>
+                                        <td>Completed</td>
+                                        <td>$280.00</td>
+                                        <td class="link-action">View</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="display-links-content dashboard">
+                            <h3>Hello Rosie!</h3>
+                            <p class="p-15">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae earum, optio sunt pariatur ut illo voluptatibus neque quia cupiditate placeat, est numquam ipsa esse temporibus.</p>
+                        </div>
+
+                        <div class="display-links-content d-none update-profile">
+                            <h3>Update</h3>
+                            <div class="update-profile-ch">
+                                <input type="text" placeholder="Username">
+                                <button>Save</button>
+                            </div>
+                        </div>
+
+                        <div class="display-links-content d-none address">
+                            <h3>Shipping Address</h3>
+                            <div class="address">
+                                <p>3522 interstate</p>
+                                <p>75 Business</p>
+                                <p>Sault Ste</p>
+                                <p>Marie, MI 49783</p>
+                                <p>New York</p>
+                                <br>
+                                <span class="edit-address">Edit</span>
+                            </div>
+                        </div>
+
+                        <div class="display-links-content change-password d-none">
+                            <h3>Change Password</h3>
+                            <div class="p-15">
+                                <form action="">
+                                    <input type="password" placeholder="Current Password">
+                                    <input type="password" placeholder="New Password">
+                                    <input type="password" placeholder="Confirm Password">
+                                    <button>Save</button>
+                                </form>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </section>
+        </main>
+
+
+        <section class="newsletter section-sm">
+            <div class="newsletter-container container ">
+                <h3 class="newsletter-title">
+                    <img src="img/email.png" alt="" >
+                    Sign up to Newsletter
+                </h3>
+                <p>
+                    ...and receive $25 coupon for first shopping.
+                </p>
+                <div class="email-input">
+                    <input type="text" placeholder="Enter your email">
+                    <button class="subscribe">Subscripe</button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="container">
+            <div class="footer-container grid">
+                
+                <div class="footer-content">
+                    <a href="index.html">
+                        <img src="img/logo.svg" alt="logo" class="footer-logo">
+                    </a>
+                    <h4 class="footer-title">Contact</h4>
+                    <p class="footer-description">
+                        <span>Address:</span>  562 Wellington Road, Street 32, San Francisco
+                    </p>
+
+                    <p class="footer-description">
+                        <span>Phone:</span>  +01 2222 365 /(+91) 01 2345 6789
+                    </p>
+
+                    <p class="footer-description">
+                        <span>Hours:</span>  10:00 - 18:00, Mon - Sat
+                    </p>
+
+                    <div class="foooter-social">
+                        <h4 class="footer-title">Follow Us</h4>
+                        <div class="social-icons">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-content">
+                    <h3 class="footer-title">About</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Support Center</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-content">
+                    <h3 class="footer-title">My Account</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">View Cart</a></li>
+                        <li><a href="#">My Wishlist</a></li>
+                        <li><a href="#">Track My Order</a></li>
+                        <li><a href="#">help</a></li>
+                        <li><a href="#">Support Center</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-content">
+                    <h3 class="footer-title">Secured Payment Gateways</h3>
+                    <img src="img/payment-method.png" alt="">
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024, <strong class="text-brand">WebUltra</strong></p>
+                <p>Designed by Nject. All rights reserved</p>
+            </div>
+        </footer>
+        <script src="js/sweetalert.min.js"></script>
+        <script src="js/accounts.js"></script>
+    </body>
+</html>
+

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/regular.min.css" integrity="sha512-j+P0XpTXw+hDTK64xqC/cjv62cf629/IR4/0bokmich7J8XdVlWT40+1M/Z58rCQ4F+3QoJIfzh6Ui6TTIP6WQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- swiper -->
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="css/master.css" >
+        <title>Cart</title>
+    </head>
+    <body>
+        <header>
+            <nav class="header-bottom">
+                <div class="container header-container">
+                    <div class="nav-menu">
+                        <a href="index.html" class="logo"><img src="img/logo.svg" alt="logo store"></a>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="accounts.html">My Account</a></li>
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <div class="input-search">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                            <input type="text" placeholder="search for items..">
+                        </div>
+                        <div class="wishlist">
+                            <a href="wishlist.index"><i class="fa-regular fa-heart"></i></a>
+                            <span class="count-wishlist">4</span>
+                        </div>
+                        <div class="shopping-cart">
+                            <a href="shopping-cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                            <span class="count-cart-shoppng">2</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="breadcrumb">
+                <ul class="breadcrumb-list container">
+                    <li><a href="index.html" class="breadcrumb-link">Home</a></li>
+                    <li><span class="breadcrumb-link">></span></li>
+                    <li class="breadcrumb-link">Shop</li>
+                    <li><span class="breadcrumb-link">></span></li>
+                    <li class="breadcrumb-link">Cart</li>
+                </ul>
+            </section>
+
+            <section class="cart container section">
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <td>Image</td>
+                                <td>Name</td>
+                                <td>Price</td>
+                                <td>Quantity</td>
+                                <td>Subtotal</td>
+                                <td>Remove</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><img src="img/product-6-1.jpg" alt=""></td>
+                                <td>
+                                    <h3 class="cart-title">J.Crew Mercantile Women's Short-Sleeve</h3>
+                                    <p class="cart-description">Maboriosam in a tonto nesciung eget distingy magndclapibus</p>
+                                </td>
+                                <td>$110</td>
+                                <td>
+                                    <input class="count-order" type="number" value="3">
+                                </td>
+                                <td>$220</td>
+                                <td><i class="fa-solid fa-trash"></i></td>
+                            </tr>    
+                            <tr>
+                                <td><img src="img/product-6-1.jpg" alt=""></td>
+                                <td>
+                                    <h3 class="cart-title">Amazon Essentials Women's Tank</h3>
+                                    <p class="cart-description">Maboriosam in a tonto nesciung eget distingy magndclapibus</p>
+                                </td>
+                                <td>$110</td>
+                                <td>
+                                    <input class="count-order" type="number" value="1">
+                                </td>
+                                <td>$220</td>
+                                <td><i class="fa-solid fa-trash"></i></td>
+                            </tr>    
+                            <tr>
+                                <td><img src="img/product-6-1.jpg" alt=""></td>
+                                <td>
+                                    <h3 class="cart-title">J.Crew Mercantile Women's Short-Sleeve</h3>
+                                    <p class="cart-description">Maboriosam in a tonto nesciung eget distingy magndclapibus</p>
+                                </td>
+                                <td>$110</td>
+                                <td>
+                                    <input class="count-order" type="number" value="4">
+                                </td>
+                                <td>$220</td>
+                                <td><i class="fa-solid fa-trash"></i></td>
+                            </tr>    
+                        </tbody>
+
+                    </table>
+                </div>
+
+                <div class="cart-actions">
+                    <a href="#">
+                        <i class="fa-solid fa-shuffle"></i> Update Cart
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-bag-shopping"></i> Continue Shopping
+                    </a>
+                </div>
+
+                <div class="shipping-cost">
+                    <div class="shipping-address">
+                        <h3>Calculate Shipping</h3>
+                        <form action="">
+                            <input type="text" class="country" placeholder="State/Country">
+                            <div class="city flex">
+                                <input type="text" placeholder="City">
+                                <input type="text" placeholder="PostCode/Zip">
+                            </div>
+                            <a href="#" class="update-btn">
+                                <i class="fa-solid fa-shuffle" ></i> Update Cart
+                            </a>
+                            <div class="coupon">
+                                <h3>Calculate Shipping</h3>
+                                <div class="coupon-input">
+                                    <input type="text" placeholder="Enter Your Coupon">
+                                    <button href="#">
+                                        <i class="fa-regular fa-clipboard"></i> Apply
+                                    </button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+
+                    <div class="cart-total">
+                        <table>
+                            <tr>
+                                <td class="total-title">Cart Totals</td>
+                            </tr>
+                            <tr>
+                                <td>Cart Subtotal</td>
+                                <td>$240</td>
+                            </tr>
+                            <tr>
+                                <td>Shipping</td>
+                                <td>$10</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td>$250</td>
+                            </tr>
+                            <tr class="total-cart-proceed">
+                                <td><button>Proceed To CheckOut</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <section class="newsletter section-sm">
+            <div class="newsletter-container container ">
+                <h3 class="newsletter-title">
+                    <img src="img/email.png" alt="" >
+                    Sign up to Newsletter
+                </h3>
+                <p>
+                    ...and receive $25 coupon for first shopping.
+                </p>
+                <div class="email-input">
+                    <input type="text" placeholder="Enter your email">
+                    <button class="subscribe">Subscripe</button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="container">
+            <div class="footer-container grid">
+                
+                <div class="footer-content">
+                    <a href="index.html">
+                        <img src="img/logo.svg" alt="logo" class="footer-logo">
+                    </a>
+                    <h4 class="footer-title">Contact</h4>
+                    <p class="footer-description">
+                        <span>Address:</span>  562 Wellington Road, Street 32, San Francisco
+                    </p>
+
+                    <p class="footer-description">
+                        <span>Phone:</span>  +01 2222 365 /(+91) 01 2345 6789
+                    </p>
+
+                    <p class="footer-description">
+                        <span>Hours:</span>  10:00 - 18:00, Mon - Sat
+                    </p>
+
+                    <div class="foooter-social">
+                        <h4 class="footer-title">Follow Us</h4>
+                        <div class="social-icons">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-content">
+                    <h3 class="footer-title">About</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Support Center</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-content">
+                    <h3 class="footer-title">My Account</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">View Cart</a></li>
+                        <li><a href="#">My Wishlist</a></li>
+                        <li><a href="#">Track My Order</a></li>
+                        <li><a href="#">help</a></li>
+                        <li><a href="#">Support Center</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-content">
+                    <h3 class="footer-title">Secured Payment Gateways</h3>
+                    <img src="img/payment-method.png" alt="">
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024, <strong class="text-brand">WebUltra</strong></p>
+                <p>Designed by Nject. All rights reserved</p>
+            </div>
+        </footer>
+        <script src="js/sweetalert.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
+
